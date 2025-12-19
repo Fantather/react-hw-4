@@ -2,9 +2,11 @@
 // Подключает CSS или inline-стиль
 import '../styles.css'
 
-export default Header({text})
+export default function Header({text})
 {
     return(
-        <footer>{text}</footer>
+        <footer>
+            <h2>{text}</h2>
+        </footer>
     )
 }

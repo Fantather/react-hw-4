@@ -3,9 +3,11 @@
 // Подключает стиль из CSS
 import '../styles.css'
 
-export default Header({title})
+export default function Header({title})
 {
     return(
-        <header>{title}</header>
+        <header>
+            <h2>{title}</h2>
+        </header>
     )
 }

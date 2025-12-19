@@ -20,12 +20,19 @@
 
 // App - главный компонент, который композитно рендерит: Header → UserList → Footer. Передаёт props в Header и Footer
 
+import Header from "./components/Header"
+import UserList from "./components/UserList"
+import Footer from "./components/Footer"
 
 function App() {
 
   return (
     <>
-      
+      <Header title='Приветствие' />
+      <hr />
+      <UserList />
+      <hr />
+      <Footer text='Прощание' />
     </>
   )
 }
